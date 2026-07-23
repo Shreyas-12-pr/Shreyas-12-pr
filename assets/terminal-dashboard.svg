@@ -1,25 +1,90 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="1200" height="400" xmlns="http://www.w3.org/2000/svg">
-  <rect width="1200" height="400" fill="#0d1117"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 620" width="100%" height="auto" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="5" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="10" result="glow" />
+      <feMerge>
+        <feMergeNode in="glow" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <linearGradient id="borderGlow" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#58a6ff" stop-opacity="0.3" />
+      <stop offset="50%" stop-color="#00bfff" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#58a6ff" stop-opacity="0.3" />
+    </linearGradient>
+    <pattern id="scanlines" patternUnits="userSpaceOnUse" width="4" height="4">
+      <rect width="4" height="4" fill="transparent" />
+      <path d="M0 1 H4" stroke="#0d1117" stroke-width="0.8" opacity="0.18" />
+    </pattern>
+    <linearGradient id="panelGradient" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#161b22" />
+      <stop offset="100%" stop-color="#11161d" />
+    </linearGradient>
+    <linearGradient id="lineGlow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#00bfff" stop-opacity="0" />
+      <stop offset="50%" stop-color="#00bfff" stop-opacity="0.18" />
+      <stop offset="100%" stop-color="#00bfff" stop-opacity="0" />
+    </linearGradient>
+  </defs>
 
-  <text x="40" y="60"
-        fill="#58a6ff"
-        font-size="24"
-        font-family="Consolas">
-    shreyas@github:~$ ./profile.sh
-  </text>
+  <rect width="1280" height="620" fill="#0d1117" />
+  <rect x="40" y="28" width="1200" height="564" rx="26" ry="26" fill="url(#panelGradient)" stroke="#30363d" stroke-width="2" filter="url(#glow)" />
+  <rect x="44" y="32" width="1192" height="556" rx="22" ry="22" fill="transparent" stroke="url(#borderGlow)" stroke-width="1.5" opacity="0.9" />
+  <rect x="44" y="32" width="1192" height="556" rx="22" ry="22" fill="url(#scanlines)" opacity="0.32" />
 
-  <text x="40" y="120"
-        fill="#c9d1d9"
-        font-size="18"
-        font-family="Consolas">
-    👤 Name : Shreyas P R
-  </text>
+  <rect x="64" y="54" width="1100" height="72" rx="18" ry="18" fill="#0f1620" stroke="#30363d" stroke-width="1" filter="url(#softGlow)" />
+  <circle cx="104" cy="90" r="10" fill="#ff5f56" />
+  <circle cx="136" cy="90" r="10" fill="#ffbd2e" />
+  <circle cx="168" cy="90" r="10" fill="#27c93f" />
+  <text x="220" y="95" fill="#c9d1d9" font-family="ui-monospace, SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace" font-size="18">shreyas@github:~$ ./profile.sh</text>
+  <g transform="translate(980,70)">
+    <text x="0" y="0" fill="#8b949e" font-family="ui-monospace, SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace" font-size="14">STATUS :</text>
+    <text x="88" y="0" fill="#58a6ff" font-family="ui-monospace, SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace" font-size="14"> ONLINE</text>
+  </g>
 
-  <text x="40" y="160"
-        fill="#c9d1d9"
-        font-size="18"
-        font-family="Consolas">
-    💻 Languages : Python • C++ • C
-  </text>
+  <rect x="64" y="146" width="1172" height="360" rx="18" ry="18" fill="#161b22" stroke="#30363d" stroke-width="1" />
+  <rect x="64" y="146" width="1172" height="360" rx="18" ry="18" fill="url(#scanlines)" opacity="0.24" />
+
+  <g font-family="ui-monospace, SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace" font-size="16" fill="#c9d1d9" letter-spacing="0.4">
+    <text x="136" y="236">Name            : <tspan fill="#58a6ff">Shreyas P R</tspan></text>
+    <text x="136" y="270">Role            : <tspan fill="#58a6ff">Computer Science Engineering Student</tspan></text>
+    <text x="136" y="304">Origin          : <tspan fill="#58a6ff">Bengaluru, India</tspan></text>
+    <text x="136" y="338">Education       : <tspan fill="#58a6ff">B.Tech CSE</tspan></text>
+    <text x="136" y="372">Status          : <tspan fill="#58a6ff">Building • Learning • Open Source</tspan></text>
+    <text x="136" y="406">Languages       : <tspan fill="#58a6ff">Python • C++ • C</tspan></text>
+    <text x="136" y="440">Frontend        : <tspan fill="#58a6ff">HTML • CSS • React</tspan></text>
+    <text x="136" y="474">Backend         : <tspan fill="#58a6ff">FastAPI • Firebase • Node.js</tspan></text>
+    <text x="700" y="236">Database        : <tspan fill="#58a6ff">MongoDB • MySQL</tspan></text>
+    <text x="700" y="270">Cloud           : <tspan fill="#58a6ff">Azure • GCP</tspan></text>
+    <text x="700" y="304">Infrastructure  : <tspan fill="#58a6ff">Linux • Windows • Docker</tspan></text>
+    <text x="700" y="338">Domains         : <tspan fill="#58a6ff">AI • Cloud • Cybersecurity</tspan></text>
+    <text x="700" y="372">Community       : <tspan fill="#58a6ff">TechNexus • MLSA</tspan></text>
+    <text x="700" y="406">GitHub          : <tspan fill="#58a6ff">Shreyas-12-pr</tspan></text>
+    <text x="700" y="440">LinkedIn        : <tspan fill="#58a6ff">shreyas-p-r</tspan></text>
+    <text x="700" y="474">Email           : <tspan fill="#58a6ff">shreyaspr770@gmail.com</tspan></text>
+  </g>
+
+  <g transform="translate(64,530)">
+    <rect x="0" y="0" width="1152" height="68" rx="18" ry="18" fill="#0f1620" stroke="#30363d" stroke-width="1" />
+    <rect x="0" y="0" width="1152" height="68" rx="18" ry="18" fill="url(#scanlines)" opacity="0.24" />
+    <text x="32" y="42" fill="#58a6ff" font-family="ui-monospace, SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace" font-size="22">live_stats &gt;</text>
+    <rect x="208" y="22" width="10" height="18" fill="#58a6ff">
+      <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite" />
+    </rect>
+  </g>
+
+  <rect x="64" y="36" width="1152" height="6" rx="3" ry="3" fill="url(#lineGlow)">
+    <animate attributeName="x" values="64;1120;64" dur="10s" repeatCount="indefinite" />
+  </rect>
+  <rect x="64" y="500" width="1152" height="4" fill="url(#lineGlow)">
+    <animate attributeName="x" values="64;1120;64" dur="12s" repeatCount="indefinite" />
+  </rect>
 </svg>
