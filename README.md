@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="./assets/terminal-dashboard.svg" width="100%" alt="Terminal Dashboard">
+</p>
+
 # 💫 About Me:
 *# Hey 👋, I'm Shreyas P R<br><br>Student | Community Builder | Tech Enthusiast<br><br>I'm passionate about building communities, exploring technology, and creating opportunities for people to learn, connect, and grow together.<br><br> • Organizing and volunteering at tech events<br> • Building projects and experimenting with new ideas<br> • Connecting people, communities, and opportunities<br> • Continuously learning and sharing knowledge<br><br>I believe that impactful technology comes from a combination of great ideas, strong execution, and collaborative communities.<br><br>Always open to collaborations, interesting projects, and meaningful conversations.<br>*
 

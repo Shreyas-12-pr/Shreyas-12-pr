@@ -1,0 +1,36 @@
+name: Update Terminal Dashboard
+
+on:
+  schedule:
+    # Runs every day at 05:30 UTC
+    - cron: "30 5 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Generate Terminal Dashboard
+        env:
+          GH_USERNAME: Shreyas-12-pr
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          OUTPUT_PATH: assets/terminal-dashboard.svg
+        run: node generate.mjs
+
+      - name: Commit updated dashboard
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: update terminal dashboard"
+          file_pattern: assets/terminal-dashboard.svg
