@@ -13,7 +13,7 @@
 
 # 📊 GitHub Stats:
 ![](https://github-readme-stats.shion.dev/api?username=Shreyas-12-pr&theme=blue-green&hide_border=false&include_all_commits=true&count_private=true)<br/>
-![](https://streak-stats.demolab.com/?user=Shreyas-12-pr&theme=blue-green&hide_border=false)<br/>
+![](https://streak-stats.demolab.com/?user=Shreyas-12-pr&theme=blue-green&hide_border=false)
 ![](https://github-readme-stats.shion.dev/api/top-langs/?username=Shreyas-12-pr&theme=blue-green&hide_border=false&include_all_commits=true&count_private=true&layout=compact)
 
 ## 🏆 GitHub Trophies
